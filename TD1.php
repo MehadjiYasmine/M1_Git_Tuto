@@ -11,7 +11,7 @@ $nom = $_POST["nom"];
 $prenom = $_POST["prenom"];
 $genre = $_POST["civilite"];
 $ville = $_POST["ville"];
-$date = $_POST["date"];
+$date = $_POST["tlemcen"];
 
  
 try {
@@ -28,7 +28,7 @@ $req->execute(array(
 ));
 echo "L'etudiant a été ajouté";
 } catch (Exception $e) {
-	die("Erreur:".$e->getMessage());
+	die("Erreur 1:".$e->getMessage());
 }
 
 /*
